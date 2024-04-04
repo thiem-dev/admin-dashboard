@@ -1,4 +1,4 @@
-import styles from './chart.module.css';
+import styles from './rightbar.module.css';
 
 const Rightbar = () => {
   return <div>Rightbar</div>;
