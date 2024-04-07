@@ -4,22 +4,30 @@ const AddProductsPage = () => {
   return (
     <div className={styles.container}>
       <form action="" className={styles.form}>
-        <input type="text" placeholder="title" name="title" required />
-        <select name="cat" id="cat">
-          <option value="general">Choose a Category</option>
-          <option value="kitchen">Kitchen</option>
-          <option value="phone">Phone</option>
-          <option value="pc">PC</option>
+        <input type="text" placeholder="username" name="username" required />
+        <input type="email" placeholder="email" name="email" required />
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          required
+        />
+        <input type="phone" placeholder="phone" name="phone" />
+        <select name="isAdmin" id="isAdmin">
+          <option value={false}>is Admin?</option>
+          <option value={true}>Yes</option>
+          <option value={false}>No</option>
         </select>
-        <input type="number" placeholder="price" name="price" />
-        <input type="number" placeholder="stock" name="stock" />
-        <input type="number" placeholder="color" name="color" />
-        <input type="number" placeholder="size" name="size" />
+        <select name="isActive" id="isActive">
+          <option value={true}>is Active?</option>
+          <option value={true}>Yes</option>
+          <option value={false}>No</option>
+        </select>
         <textarea
           name="desc"
           id="desc"
           rows="16"
-          placeholder="description"
+          placeholder="Address"
         ></textarea>
         <button type="submit">Submit</button>
       </form>
